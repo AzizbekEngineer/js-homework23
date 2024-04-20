@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.btn {
+    background: green;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btnRed {
+    background: red;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+main {
+    background: url(../img/back.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}

@@ -5,28 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
-    <form class="form" action="">
+    <!-- <form class="form" action="">
         <input class="fname inputValue" type="text">
         <input class="lname inputValue" type="text">
-        <button>ADD</button>
-    </form>
+        <button type="submit" class="btn">ADD</button>
+    </form> -->
+    <main>
+        <section class="module">
+            <h1 class="module__title">
+                Creat New card
+            </h1>
+            <form class="form">
+                <div class="form__btns">
+                    <button type="reset" class="form__btn__cancel btnRed">Cancel</button>
+                    <button type="submit" class=" btn">ADD</button>
+                </div>
+                <div class="form__inputs">
 
-    <div class="wrapper">
-        <div class="card">
-            <div class="card__image"></div>
-            <h3></h3>
-            <p></p>
-            <button>Delete</button>
-            <button>Edit</button>
-        </div>
-    </div>
+                    <input required class="name inputValue" placeholder="Enter product name" type="text">
+                    <input required class="url inputValue" placeholder="Enter product img url" type="text">
+                    <input required class="quantity inputValue" placeholder="Enter product quantity" type="number">
+                    <select name="" id="unit">
+                        <option value="Kg">Kg</option>
+                        <option value="Litr">Litr</option>
+                        <option value="Dona">Dona</option>
+                    </select>
+                    <input required class="price inputValue" placeholder="Enter product price" type="number">
+                    <input required class="color inputValue" placeholder="Enter product color" type="text">
 
+                </div>
 
-    <script src="./js/app.js"></script>
+            </form>
+        </section>
+        <div class="close__window"></div>
+
+        <section class="cards container">
+            <h1 class="cards__title">
+                Add New product card
+            </h1>
+            <button class="add__modul btn">Add</button>
+            <div class="wrapper">
+                <div class="card">
+                    <div class="card__image">
+                        <img src="" alt="">
+                    </div>
+                    <h3></h3>
+                    <p></p>
+                    <button>Delete</button>
+                    <button>Edit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
